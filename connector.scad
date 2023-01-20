@@ -7,9 +7,9 @@
  *
  */
 
-module connector(H=50, size=[40,25],T=3, D=40, T1=2){
+module connector(H=50, size=[40,25], T=3, D=40){
 	r=D/2;
-
+    T1=T;
 	difference(){
 		hull(){
 			translate([0,0,0] ) cylinder(1,r+T1, $fn=100);

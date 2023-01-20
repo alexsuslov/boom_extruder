@@ -6,7 +6,7 @@ S - split
 D1 - diam vint
 */
 
-module homut(D=40, H=20, T=2, S=2, D1=3){
+module homut(D=40, H=20, T=3, S=2, D1=3){
     r=D/2;
     r1=D1/2;
     zazor=D+T;
@@ -50,4 +50,4 @@ module homut(D=40, H=20, T=2, S=2, D1=3){
         }
 }
 
-// homut();
+//homut();

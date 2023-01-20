@@ -15,12 +15,12 @@ include <tube.scad>
 include <connector.scad>
 include <noise.scad>
 
-module extruder(D=40, size=[50, 20]){
+module extruder(D=40.2, size=[50, 20]){
 
-    translate([0,0,20]) homut(D=D);
-    tube(D);
+    translate([0,0,20]) homut(D=D, T=3);
+    tube(D, T=3);
     rotate([0,180,0]){
-        connector(D=D, size=size);
+        connector(D=D, T=3, size=size);
     }
     translate([0,0,-65]) noise(size=size);
 }
