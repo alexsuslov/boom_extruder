@@ -1,4 +1,4 @@
 import("extruder.stl");
-translate([0,0,20     ])
+translate([0,0,20])
 %color("blue") 
-    import("homut1.stl");
+    import("homut1.stl");                  

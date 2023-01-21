@@ -21,9 +21,14 @@ module extruder(D=40.2, T=3, size=[50, 20]){
     T1=1.6;    
     difference(){
         tube(D, H=30, T=3);
-        translate([0, 0, 23])
+        translate([0, 0, 28])
             cuter(D, T, T1);
     }
+    
+        difference(){
+            cylinder(h=2, d=D);
+            cylinder(h=2, d=D-2, d1=D);
+        }
     rotate([0,180,0]){
         connector(D=D, T=3, size=size);
     }
